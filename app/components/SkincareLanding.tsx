@@ -20,7 +20,7 @@ export default function SkincareLanding() {
                     className="absolute inset-0 bg-center bg-cover"
                     style={{
                         backgroundImage:
-                            "url('https://plus.unsplash.com/premium_photo-1661339527681-e502325661be?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                            "url('https://plus.unsplash.com/premium_photo-1703343320257-5dedae19c70b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
                     }}
                 />
 
@@ -45,10 +45,10 @@ export default function SkincareLanding() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="px-8 py-3 bg-gray-200 text-black font-semibold tracking-wide hover:bg-white transition-colors"> SHOP THE COLLECTION </button>
+                        <button className="px-8 py-3 cursor-pointer bg-gray-200 text-black font-semibold tracking-wide hover:bg-white transition-colors"> SHOP THE COLLECTION </button>
 
 
-                        <button className="px-8 py-3 border-2 border-gray-200 text-white font-semibold tracking-wide hover:bg-gray-200 hover:text-black transition-colors">
+                        <button className="px-8 py-3 border-2 cursor-pointer border-gray-200 text-white font-semibold tracking-wide hover:bg-gray-200 hover:text-black transition-colors">
                             EXPLORE OUR STORY
                         </button>
                     </div>
@@ -91,7 +91,7 @@ export default function SkincareLanding() {
                         royal treatment.
                     </p>
 
-                    <button className="px-8 py-3 bg-gray-200 text-black font-semibold tracking-wide hover:bg-white transition-colors">
+                    <button className="px-8 py-3 cursor-pointer  bg-gray-200 text-black font-semibold tracking-wide hover:bg-white transition-colors">
                         VIEW ALL PRODUCTS
                     </button>
                 </div>
