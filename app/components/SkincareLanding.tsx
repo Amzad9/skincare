@@ -183,12 +183,20 @@ export default function SkincareLanding() {
                         />
                     </div>
 
-                    <div className="elative xl:col-span-7 bg-gray-900 rounded-3xl px-8 pt-16 border border-slate-700/30 shadow-2xl relative overflow-hidden">
+                    <div className="elative xl:col-span-7 bg-gray-900 rounded-3xl px-8 py-8 border border-slate-700/30 shadow-2xl relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-48 h-48 bg-linear-to-br from-white/20 to-transparent blur-3xl" />
                         <div className="absolute top-0 right-0 w-48 h-48 bg-linear-to-bl from-white/20 to-transparent blur-3xl" />
 
-                        <h2 className='text-2xl md:text-2xl font-sans uppercase font-bold mb-6 text-center'>What our community says</h2>
-                        <div className="grid md:grid-cols-3 gap-10 text-center">
+                        <div className="flex justify-center mb-8">
+    <h2 className="relative text-2xl md:text-2xl font-sans uppercase font-bold text-center">
+        What our community says
+
+        {/* underline */}
+        <span className="absolute left-1/2 -bottom-4 -translate-x-1/2 w-28 h-[2px] bg-linear-to-r from-transparent via-gray-300 to-transparent" />
+        <span className="absolute left-1/2 -bottom-5 -translate-x-1/2 w-12 h-[6px] rounded-full bg-gray-300/30 blur-md" />
+    </h2>
+</div>
+                     <div className="grid md:grid-cols-3 gap-10 text-center">
                             <TestimonialCard
                                 image="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 name="Aishe K."
