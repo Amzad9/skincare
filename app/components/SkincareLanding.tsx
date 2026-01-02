@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Leaf,
     Heart,
@@ -10,12 +10,88 @@ import {
     Facebook,
     Youtube,
     Twitter,
+    Menu,
+    X,
 } from 'lucide-react';
 
 export default function SkincareLanding() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
     return (
         <div className="min-h-screen bg-black text-white font-sans">
-            <section className="relative h-screen flex items-center justify-center overflow-hidden">
+            <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/90 border-b border-white/10">
+                <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+                    {/* Logo */}
+                    <div className="flex items-center gap-2">
+                        <div className="w-9 h-9 rounded-full bg-linear-to-br from-gray-200 to-gray-500 flex items-center justify-center text-black font-serif font-bold">
+                            R
+                        </div>
+                        <span className="font-serif text-lg tracking-widest">
+                            ROYAL REIGN
+                        </span>
+                    </div>
+
+                    {/* Desktop Navigation */}
+                    <nav className="hidden md:flex items-center gap-8 text-sm tracking-widest">
+                        <a href="#" className="hover:text-gray-300 transition">SHOP</a>
+                        <a href="#" className="hover:text-gray-300 transition">ABOUT</a>
+                        <a href="#" className="hover:text-gray-300 transition">INGREDIENTS</a>
+                        <a href="#" className="hover:text-gray-300 transition">BLOG</a>
+                    </nav>
+
+                    {/* Desktop CTA */}
+                    <button className="hidden md:block px-6 py-2 border border-gray-300 text-sm tracking-wider hover:bg-gray-200 hover:text-black transition">
+                        SHOP NOW
+                    </button>
+
+                    <button
+                        onClick={() => setMobileMenuOpen(true)}
+                        className="md:hidden"
+                    >
+                        <Menu className="w-6 h-6" />
+                    </button>
+                </div>
+            </header>
+
+            {/* ================= MOBILE MENU ================= */}
+            <div className={`fixed inset-0 z-50 ${mobileMenuOpen ? 'visible' : 'invisible'}`}>
+                {/* Backdrop */}
+                <div
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`absolute inset-0 bg-black/70 transition-opacity ${
+                        mobileMenuOpen ? 'opacity-100' : 'opacity-0'
+                    }`}
+                />
+
+                {/* Drawer */}
+                <div
+                    className={`absolute top-0 right-0 h-full w-[80%] max-w-sm bg-black border-l border-white/10 p-6 transform transition-transform duration-300 ${
+                        mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+                    }`}
+                >
+                    {/* Close */}
+                    <div className="flex justify-end mb-8">
+                        <button onClick={() => setMobileMenuOpen(false)}>
+                            <X className="w-6 h-6" />
+                        </button>
+                    </div>
+
+                    {/* Menu Links */}
+                    <nav className="flex flex-col gap-6 text-lg tracking-widest">
+                        <a href="#" onClick={() => setMobileMenuOpen(false)}>SHOP</a>
+                        <a href="#" onClick={() => setMobileMenuOpen(false)}>ABOUT</a>
+                        <a href="#" onClick={() => setMobileMenuOpen(false)}>INGREDIENTS</a>
+                        <a href="#" onClick={() => setMobileMenuOpen(false)}>BLOG</a>
+                        <a href="#" onClick={() => setMobileMenuOpen(false)}>CONTACT</a>
+                    </nav>
+
+                    <button className="mt-10 w-full px-6 py-3 border border-gray-300 text-sm tracking-wider hover:bg-gray-200 hover:text-black transition">
+                        SHOP NOW
+                    </button>
+                </div>
+            </div>
+
+            <section className="relative pt-24 mt-17 h-[calc(100vh-70px)] flex items-center justify-center overflow-hidden">
                 <div
                     className="absolute inset-0 bg-center bg-cover"
                     style={{
