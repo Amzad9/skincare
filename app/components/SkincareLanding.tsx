@@ -27,7 +27,7 @@ export default function SkincareLanding() {
                             R
                         </div>
                         <span className="font-serif text-lg tracking-widest">
-                            ROYAL REIGN
+                            NU REIGN
                         </span>
                     </div>
 
@@ -273,7 +273,7 @@ function TestimonialCard({ name, text, image }: any) {
 
 function SocialIcon({ icon }: { icon: React.ReactNode }) {
     return (
-        <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+        <div className="w-10 h-10 cursor-pointer bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
             {icon}
         </div>
     );
