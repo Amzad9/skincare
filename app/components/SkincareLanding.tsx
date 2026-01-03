@@ -91,16 +91,16 @@ export default function SkincareLanding() {
                 </div>
             </div>
 
-            <section className="relative pt-24 mt-17 h-[calc(100vh-70px)] flex items-center justify-center overflow-hidden">
+            <section className="relative pt-24 mt-17 h-[calc(100vh-300px)] flex items-center justify-center overflow-hidden">
                 <div
                     className="absolute inset-0 bg-center bg-cover"
                     style={{
                         backgroundImage:
-                            "url('https://plus.unsplash.com/premium_photo-1703343320257-5dedae19c70b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                            "url('/bg.png')",
                     }}
                 />
 
-                <div className="absolute inset-0 bg-black/50 bg-linear-to-br from-black via-black/20 to-gray-900" />
+                <div className="absolute inset-0 bg-black/2\10 bg-linear-to-br from-black via-black/20 to-gray-900" />
 
                 <div className="absolute inset-0 opacity-40">
                     <div className="absolute top-20 left-10 w-20 h-20 bg-red-700 rounded-full blur-2xl animate-pulse" />
@@ -177,7 +177,7 @@ export default function SkincareLanding() {
                 <div className="container mx-auto grid xl:grid-cols-12 gap-8">
                     <div className="xl:col-span-5 rounded-3xl overflow-hidden shadow-2xl">
                         <img
-                            src="https://plus.unsplash.com/premium_photo-1703343321242-73bb11c237d1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src="/girls.png"
                             className="w-full h-full object-cover"
                             alt="Skincare"
                         />
