@@ -91,7 +91,7 @@ export default function SkincareLanding() {
                 </div>
             </div>
 
-            <section className="relative pt-24 mt-17 h-[calc(100vh-300px)] flex items-center justify-center overflow-hidden">
+            <section className="relative pt-24 mt-17 h-[calc(100vh-100px)] flex items-center justify-center overflow-hidden">
                 <div
                     className="absolute inset-0 bg-center bg-cover"
                     style={{
@@ -109,7 +109,7 @@ export default function SkincareLanding() {
                     <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-red-700 rounded-full blur-xl animate-pulse delay-300" />
                 </div>
 
-                <div className="relative z-10 text-center px-4 max-w-5xl">
+                <div className="relative z-10 text-center px-4 pt-0 lg:pt-74 max-w-7xl">
                     <h1 className="text-5xl md:text-8xl font-serif font-bold mb-6 tracking-wider">
                         UNLEASH YOUR NATURAL ROYALTY
                     </h1>
