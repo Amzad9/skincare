@@ -177,7 +177,7 @@ export default function SkincareLanding() {
                 <div className="container mx-auto grid xl:grid-cols-12 gap-8">
                     <div className="xl:col-span-5 rounded-3xl overflow-hidden shadow-2xl">
                         <img
-                            src="/girls.png"
+                            src="/clean_pic.png"
                             className="w-full h-full object-cover"
                             alt="Skincare"
                         />
